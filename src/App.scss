@@ -6,7 +6,7 @@
   --grey-border: #e8e8e8;
   --warm-grey: #888;
   --color-primary: #ec4c8a;
-  --color-primary-dark-1: #e0417e;
+  --color-primary-dark-1: #00000010;
   --color-primary-dark-2: #0000002a;
 }
 
@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  background-color: var(--color-primary-dark-1);
+  background-color: var(--color-primary);
   color: var(--white);
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -36,9 +36,12 @@ body {
   font-size: 1.6rem;
 }
 
-.countryContainer{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-height: calc(47*18rem);
+.box-1 {
+  padding: 10rem;
+  background-color: var(--color-primary-dark-1);
+}
+
+.box-2 {
+  padding: 10rem;
+  background-color: var(--color-primary-dark-2);
 }
