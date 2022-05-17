@@ -1,0 +1,10 @@
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 1rem;
+  background-color: var(--color-primary-dark-1);
+
+  &:nth-child(even) {
+    background-color: var(--color-primary-dark-2);
+  }
+}

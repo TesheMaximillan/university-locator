@@ -3,7 +3,7 @@ import logger from 'redux-logger';
 import { reducer } from './reducer';
 
 const store = configureStore({
-  reducer,
+  reducer: { reducer },
   middleware: (getDefaultMiddleWare) => getDefaultMiddleWare().concat(logger),
   devTools: process.env.NODE_ENV !== 'production',
 });
