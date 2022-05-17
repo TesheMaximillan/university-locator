@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;700&display=swap');
+
+:root {
+  --white: #fff;
+  --light-grey: #fafafa;
+  --grey-border: #e8e8e8;
+  --warm-grey: #888;
+  --color-primary: #ec4c8a;
+  --color-primary-dark-1: #00000010;
+  --color-primary-dark-2: #0000002a;
+}
+
+// ///////////////////////////// Global Reset
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+.box-1 {
+  padding: 10rem;
+  background-color: var(--color-primary-dark-1);
+}
+
+.box-2 {
+  padding: 10rem;
+  background-color: var(--color-primary-dark-2);
+}
