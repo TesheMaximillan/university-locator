@@ -6,11 +6,20 @@
   --grey-border: #e8e8e8;
   --warm-grey: #888;
   --color-primary: #ec4c8a;
-  --color-primary-dark-1: #00000010;
-  --color-primary-dark-2: #0000002a;
+  --color-primary-dark-1: #e0417e;
+  --color-primary-dark-2: #00000012;
+  --color-primary-dark-3: #00000040;
 }
 
 // ///////////////////////////// Global Reset
+
+@mixin title {
+  padding: 0 0.5rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--grey-border);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,20 +37,10 @@ html {
 }
 
 body {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dark-1);
   color: var(--white);
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   font-size: 1.6rem;
-}
-
-.box-1 {
-  padding: 10rem;
-  background-color: var(--color-primary-dark-1);
-}
-
-.box-2 {
-  padding: 10rem;
-  background-color: var(--color-primary-dark-2);
 }

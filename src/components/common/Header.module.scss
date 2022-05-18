@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary);
+  gap: 1rem;
+
+  .image {
+    width: 50%;
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+      width: 12rem;
+      height: 12rem;
+      color: var(--color-primary-dark-3);
+    }
+  }
+
+  .headerTitle {
+    text-transform: uppercase;
+
+    h2 {
+      font-size: 3rem;
+      line-height: 90%;
+      letter-spacing: 0.3rem;
+    }
+  }
+}
