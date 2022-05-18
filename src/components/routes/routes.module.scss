@@ -1,5 +1,5 @@
 .title {
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   font-weight: 700;
   font-size: 1.6rem;
   color: var(--grey-border);
@@ -10,9 +10,9 @@
   background-color: var(--color-primary-dark-2);
 }
 
-.countryContainer{
+.countryContainer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-height: calc(47*18rem);
+  max-height: calc(47 * 18rem);
 }
