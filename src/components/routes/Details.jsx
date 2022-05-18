@@ -5,6 +5,9 @@ import { useParams } from 'react-router-dom';
 import Header from '../common/Header';
 import Navbar from '../common/Navbar';
 import DetailCard from '../common/DetialCard';
+import styles from './routes.module.scss';
+
+const { title, detailTitle } = styles;
 
 function Details() {
   const universities = useSelector((state) => state.reducer);
@@ -14,8 +17,9 @@ function Details() {
   const { name, chapterID } = university;
   return (
     <div>
-      <Navbar title="University Details" />
+      <Navbar title="University Location" />
       <Header name={name} view={chapterID} />
+      <h3 className={`${title} ${detailTitle}`}>University Location Details</h3>
       <DetailCard university={university} />
     </div>
   );
