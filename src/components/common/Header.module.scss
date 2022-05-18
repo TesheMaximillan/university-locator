@@ -2,10 +2,20 @@
   display: flex;
   align-items: center;
   background-color: var(--color-primary);
+  gap: 1rem;
 
   .image {
     width: 50%;
     height: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+      width: 12rem;
+      height: 12rem;
+      color: var(--color-primary-dark-3);
+    }
   }
 
   .headerTitle {
