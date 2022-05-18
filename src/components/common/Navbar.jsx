@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { FaAngleLeft, FaMicrophone } from 'react-icons/fa';
 import { BsGearFill } from 'react-icons/bs';
@@ -21,5 +21,9 @@ function Navbar({ title }) {
     </div>
   );
 }
+
+Navbar.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
 export default Navbar;

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import { IoArrowForwardCircleOutline } from 'react-icons/io5';
 import { TiLocation } from 'react-icons/ti';

@@ -1,4 +1,3 @@
-/* eslint-disable default-param-last */
 import getData from '../API/api';
 
 // Action Type

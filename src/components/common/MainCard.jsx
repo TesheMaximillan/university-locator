@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import { IoArrowForwardCircleOutline } from 'react-icons/io5';
 import { TiLocation } from 'react-icons/ti';
 import { NavLink } from 'react-router-dom';
@@ -23,5 +23,9 @@ function Card({ university }) {
     </NavLink>
   );
 }
+
+Card.propTypes = {
+  university: PropTypes.string.isRequired,
+};
 
 export default Card;
