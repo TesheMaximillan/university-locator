@@ -1,35 +1,26 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { IoArrowForwardCircleOutline } from 'react-icons/io5';
 import styles from './DetailCard.module.scss';
 
-const { listItem } = styles;
+const { listItem, info, icon } = styles;
 
 function Card({ university }) {
-  const {
-    name, chapterID, city, mevrRD, state,
-  } = university;
+  const arrObj = Object.values(university);
+  arrObj.shift();
+  const desc = ['University Name', 'City', 'State', 'Chapter ID', 'Mevr RD'];
   return (
     <ul>
-      <li className={listItem}>
-        <h3>University Name</h3>
-        <p>{name}</p>
-      </li>
-      <li className={listItem}>
-        <h3>Chapter ID</h3>
-        <p>{chapterID}</p>
-      </li>
-      <li className={listItem}>
-        <h3>City</h3>
-        <p>{city}</p>
-      </li>
-      <li className={listItem}>
-        <h3>Mevr RD</h3>
-        <p>{mevrRD}</p>
-      </li>
-      <li className={listItem}>
-        <h3>State</h3>
-        <p>{state}</p>
-      </li>
+      {arrObj.map((detail, index) => (
+        <li key={index} className={listItem}>
+          <h3>{desc[index]}</h3>
+          <div className={info}>
+            <p>{detail}</p>
+            <IoArrowForwardCircleOutline className={icon} />
+          </div>
+        </li>
+      ))}
     </ul>
   );
 }
